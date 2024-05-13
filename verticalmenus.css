@@ -1,0 +1,90 @@
+/* a:hover{
+    text-decoration: none;
+} */
+
+/* h1:hover a{
+    color: red;
+} */
+
+/* div:hover a{
+    color: red;
+    text-decoration: none;
+} */
+
+/* -----hover effect works for itself and its descendent i.e children also------- */
+
+/* a{
+    display: none;
+}
+
+div:hover a{
+    display: inline;
+} */
+
+/* ---vh means view port height----- */
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(./images/nature.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    background-color:rgba(185, 253, 200, 0.534);
+    width: 13%;
+    height:100vh;
+
+
+}
+#const{
+    margin: 0;
+    padding: 0;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    display: block;
+
+    /* -----why bloc level bcoz its not allowing vertical paddiing so we are providing the bloc level property----- */
+}
+
+a:hover{
+    background-color: rgba(175, 206, 112, 0.685);
+}
+
+
+/* ----normal dropdown------ */
+/* #menu{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(187, 250, 250);
+    position: relative;
+    display: none;
+} */
+
+#menu{
+    padding: 0;
+    margin: 0;
+    background-color: rgba(159, 243, 166, 0.61);
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    
+    display: none;
+}
+
+#drop{
+    position: relative;
+    text-decoration: none;
+}
+
+
+
+
+#drop:hover #menu{
+    display: block;
+}
